@@ -1,0 +1,155 @@
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    color: white
+}
+
+.mb-lg-4{
+  display: flex;
+}
+
+h1{
+    color: #F9EBFF;
+}
+
+h2{
+    margin-bottom: 2rem;
+    color: #F9EBFF;
+}
+
+
+h4{
+    margin-bottom: 2rem;
+}
+
+.art{
+  max-height: 600px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.img300{
+    max-width:300px;
+    margin-bottom: 4rem;
+}
+
+.img200{
+    width:200px;
+    margin-bottom: 4rem;
+    height: 200px;
+}
+
+.logo{
+    max-width:130px;
+}
+
+#image-gallery {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#current-image {
+    max-width: 100%;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#image-thumbs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+  filter: invert(1) brightness(30%);
+  color: grey;
+}
+
+.rightArrow {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+  filter: invert(1) brightness(30%);
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 576px) {
+    .img200 {
+        width:140px;
+        height: 140px;
+    }
+
+    #image-gallery{
+      width: 90vw;
+      margin: 0 auto;
+    }
+
+    #current-image{
+        max-width: 90vw;
+        max-height: 243px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #image-thumbs{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .thumb{
+      width: 10vw;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .arrow{
+      width: 15vw;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+      cursor: pointer;
+      filter: invert(1) brightness(30%);
+      color: grey;
+    }
+
+    .rightArrow{
+      width: 15vw;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+      cursor: pointer;
+      filter: invert(1) brightness(30%);
+      transform: rotate(180deg);
+    }
+
+    .art{
+      padding-top: 1em;
+      max-height: 90vw;
+      max-width: 90vw;
+      margin: auto;
+    }
+}
